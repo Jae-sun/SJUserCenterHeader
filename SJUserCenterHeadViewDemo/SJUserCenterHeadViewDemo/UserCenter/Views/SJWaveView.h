@@ -10,6 +10,21 @@
 
 @interface SJWaveView : UIView
 
+/**
+ *  波浪的颜色
+ */
+@property (nonatomic, strong) UIColor *fillColor;
+
+/**
+ *  波浪的速度
+ */
+@property (nonatomic, assign) CGFloat speed;
+
+/**
+ *  波浪持续时间
+ */
+@property (nonatomic, assign) CGFloat duration;
+
 - (void)starWave;
 
 - (void)stopWave;

@@ -23,7 +23,6 @@
     self = [super initWithFrame:frame];
     if (self) {
         headHeight = frame.size.height;
-      
         [self s_setupViews];
     }
     

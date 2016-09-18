@@ -26,6 +26,7 @@
 
 @implementation SJWaveView
 
+
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -44,6 +45,18 @@
     self.backgroundColor = [UIColor clearColor];
 }
 
+- (void)setFillColor:(UIColor *)fillColor {
+    _fillColor = fillColor;
+}
+
+- (void)setSpeed:(CGFloat)speed {
+    _speed = speed;
+}
+
+- (void)setDuration:(CGFloat)duration {
+    _duration = duration;
+}
+
 -(void)starWave {
     //self.backgroundColor = [UIColor yellowColor];
     self.waveAmplitude = 0.5 * self.wave_H;
@@ -51,8 +64,10 @@
     // 给视图添加ShapeLayer
     self.shapeLayer = [CAShapeLayer layer];
     self.shapeLayer.borderWidth = 1; // 线宽
-//    self.shapeLayer.strokeColor = [UIColor redColor].CGColor; // 线的颜色
-    self.shapeLayer.fillColor = [UIColor whiteColor].CGColor; // 填充色
+    if (!self.fillColor) {
+        self.fillColor = [UIColor whiteColor];
+    }
+    self.shapeLayer.fillColor = self.fillColor.CGColor; // 填充色
     [self.layer addSublayer:self.shapeLayer];
     
     //【**波动画关键**】 一秒执行60次（算是CADisplayLink特性），即每一秒执行 setShapeLayerPath 方法60次
@@ -60,12 +75,32 @@
     [self.displaylink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
 }
 
+
+/**
+ *  停止动画
+ */
+- (void)stopWave {
+    
+    [self.displaylink invalidate];
+    [self.shapeLayer removeFromSuperlayer];
+}
+
+
 // 设置正玄线路径
 - (void)setShapeLayerPath {
     
-    self.offsetX += (self.wave_W / 60);
+    if (!self.speed) {
+        self.speed = 1.0;
+    }
     
-    self.waveAmplitude -= 0.05;
+  
+    if (!self.duration) {
+        self.duration = 2.0;
+    }
+    
+    self.offsetX += (self.wave_W / 60 * self.speed);
+    // 波的振幅不断减小，形成水波更为逼真
+    self.waveAmplitude -= (0.5 * self.wave_H / 60.0 / self.duration);
     
     if (self.waveAmplitude < 0.1) {
         [self stopWave];
@@ -95,15 +130,6 @@
     [path addLineToPoint:CGPointMake(self.wave_W, self.wave_H)];
     [path closePath];
     return path;
-}
-
-/**
- *  停止动画
- */
-- (void)stopWave {
-
-    [self.displaylink invalidate];
-    [self.shapeLayer removeFromSuperlayer];
 }
 
 

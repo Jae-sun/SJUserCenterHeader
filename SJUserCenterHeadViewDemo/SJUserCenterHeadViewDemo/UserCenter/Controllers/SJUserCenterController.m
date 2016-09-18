@@ -144,7 +144,7 @@
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
    
     if (self.isShowWave) {
-         [self.headView starWave];
+         [self.headView.waveView starWave];
     }
 }
 
@@ -161,7 +161,7 @@
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     
-    [self.headView stopWave];
+    [self.headView.waveView stopWave];
 }
 
 

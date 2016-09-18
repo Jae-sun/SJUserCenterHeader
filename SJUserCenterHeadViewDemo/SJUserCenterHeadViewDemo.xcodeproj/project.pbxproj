@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BE69C4D1D726F93001F7B1F /* SJDynamicHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE69C4A1D726F93001F7B1F /* SJDynamicHeadView.m */; };
+		4BE69C4E1D726F93001F7B1F /* SJWaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE69C4C1D726F93001F7B1F /* SJWaveView.m */; };
 		A808F63B1D6E7A87000BEB35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A808F63A1D6E7A87000BEB35 /* main.m */; };
 		A808F63E1D6E7A87000BEB35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A808F63D1D6E7A87000BEB35 /* AppDelegate.m */; };
 		A808F6441D6E7A87000BEB35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A808F6421D6E7A87000BEB35 /* Main.storyboard */; };
@@ -15,7 +17,6 @@
 		A808F6541D6E7A87000BEB35 /* SJUserCenterHeadViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A808F6531D6E7A87000BEB35 /* SJUserCenterHeadViewDemoTests.m */; };
 		A808F65F1D6E7A87000BEB35 /* SJUserCenterHeadViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A808F65E1D6E7A87000BEB35 /* SJUserCenterHeadViewDemoUITests.m */; };
 		A808F6711D6E7E74000BEB35 /* SJUserCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = A808F6701D6E7E74000BEB35 /* SJUserCenterController.m */; };
-		A808F6741D6E7F15000BEB35 /* SJDynamicHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A808F6731D6E7F15000BEB35 /* SJDynamicHeadView.m */; };
 		A808F67B1D6E8589000BEB35 /* Cyuri03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A808F67A1D6E8589000BEB35 /* Cyuri03.jpg */; };
 		A808F6881D6EDF66000BEB35 /* img_app.png in Resources */ = {isa = PBXBuildFile; fileRef = A808F67C1D6EDF66000BEB35 /* img_app.png */; };
 		A808F6891D6EDF66000BEB35 /* img_app@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A808F67D1D6EDF66000BEB35 /* img_app@2x.png */; };
@@ -49,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BE69C491D726F93001F7B1F /* SJDynamicHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJDynamicHeadView.h; sourceTree = "<group>"; };
+		4BE69C4A1D726F93001F7B1F /* SJDynamicHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJDynamicHeadView.m; sourceTree = "<group>"; };
+		4BE69C4B1D726F93001F7B1F /* SJWaveView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJWaveView.h; sourceTree = "<group>"; };
+		4BE69C4C1D726F93001F7B1F /* SJWaveView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJWaveView.m; sourceTree = "<group>"; };
 		A808F6361D6E7A86000BEB35 /* SJUserCenterHeadViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJUserCenterHeadViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A808F63A1D6E7A87000BEB35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A808F63C1D6E7A87000BEB35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,8 +70,6 @@
 		A808F6601D6E7A87000BEB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A808F66F1D6E7E74000BEB35 /* SJUserCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJUserCenterController.h; sourceTree = "<group>"; };
 		A808F6701D6E7E74000BEB35 /* SJUserCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJUserCenterController.m; sourceTree = "<group>"; };
-		A808F6721D6E7F15000BEB35 /* SJDynamicHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJDynamicHeadView.h; sourceTree = "<group>"; };
-		A808F6731D6E7F15000BEB35 /* SJDynamicHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJDynamicHeadView.m; sourceTree = "<group>"; };
 		A808F67A1D6E8589000BEB35 /* Cyuri03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Cyuri03.jpg; sourceTree = "<group>"; };
 		A808F67C1D6EDF66000BEB35 /* img_app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_app.png; sourceTree = "<group>"; };
 		A808F67D1D6EDF66000BEB35 /* img_app@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_app@2x.png"; sourceTree = "<group>"; };
@@ -190,8 +193,10 @@
 		A808F66E1D6E7E04000BEB35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A808F6721D6E7F15000BEB35 /* SJDynamicHeadView.h */,
-				A808F6731D6E7F15000BEB35 /* SJDynamicHeadView.m */,
+				4BE69C491D726F93001F7B1F /* SJDynamicHeadView.h */,
+				4BE69C4A1D726F93001F7B1F /* SJDynamicHeadView.m */,
+				4BE69C4B1D726F93001F7B1F /* SJWaveView.h */,
+				4BE69C4C1D726F93001F7B1F /* SJWaveView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -361,9 +366,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A808F63E1D6E7A87000BEB35 /* AppDelegate.m in Sources */,
-				A808F6741D6E7F15000BEB35 /* SJDynamicHeadView.m in Sources */,
+				4BE69C4D1D726F93001F7B1F /* SJDynamicHeadView.m in Sources */,
 				A808F63B1D6E7A87000BEB35 /* main.m in Sources */,
 				A808F6711D6E7E74000BEB35 /* SJUserCenterController.m in Sources */,
+				4BE69C4E1D726F93001F7B1F /* SJWaveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

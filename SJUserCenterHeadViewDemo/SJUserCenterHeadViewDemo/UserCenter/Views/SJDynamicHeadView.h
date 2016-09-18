@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SJWaveView.h"
 
 @interface SJDynamicHeadView : UIView
 
 @property (nonatomic, strong) UIView *navBar;
 @property (nonatomic, strong) UIImageView *imgView;
-
-- (void)starWave;
-- (void)stopWave;
+@property (nonatomic, strong) SJWaveView *waveView;
 
 @end
